@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基本フォントサイズを標準に */
+html {
+  font-size: 16px;
+}
+
+/* フォーカス時の視認性 */
+*:focus {
+  outline: 2px solid #4f46e5 !important;
+  outline-offset: 2px !important;
+}
+
+/* 入力フィールドのスタイル */
+input {
+  font-size: 1rem !important;
+  padding: 0.75rem !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+input:hover {
+  border-color: #6366f1 !important;
+}
+
+/* 数値入力フィールドのスピンボタンを非表示 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* プレースホルダーのスタイル */
+::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* ボタンのスタイル */
+button {
+  min-height: 44px;
+}
+
+/* テーブルのスタイル */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 0.75rem !important;
+  font-size: 0.875rem !important;
+}
+
+/* ヘッダーのスタイル */
+nav {
+  padding: 0.75rem 0 !important;
+}
+
+/* カード内のコンテンツ余白 */
+.card-content {
+  padding: 1.5rem !important;
+}
+
+/* エラーメッセージ */
+.error-message {
+  font-size: 0.875rem !important;
+  padding: 0.75rem !important;
+  background-color: #fee2e2 !important;
+  border: 1px solid #ef4444 !important;
+  border-radius: 0.375rem !important;
+}
+
+/* ヘルプテキスト */
+.help-text {
+  font-size: 0.875rem !important;
+  color: #4b5563 !important;
+  margin-top: 0.375rem !important;
+}
